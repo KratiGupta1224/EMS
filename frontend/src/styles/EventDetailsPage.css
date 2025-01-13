@@ -1,0 +1,266 @@
+   .event-details-page {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9), rgba(32, 32, 32, 0.9));
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: left; */
+    min-height: 100vh;
+  }
+  
+  .event-details-page h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ff6600;
+    margin-bottom: 20px;
+    /* text-align: center; */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ff6600, #ff9e00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .event-details-page p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    /* text-align: center; */
+    line-height: 1.5;
+  }
+  
+  .event-details-page .event-register {
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #ff6600, #ff9e00);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 40px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-details-page .event-register:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(45deg, #e65100, #f57c00);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .event-details-page .event-register:active {
+    transform: scale(0.95);
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+  }
+  
+  .event-details-page .updateRegistrationCount {
+    padding: 12px 30px;
+    margin: 0 auto;
+    background-color: #00c853;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-details-page .updateRegistrationCount:hover {
+    transform: translateY(-5px);
+    background-color: #00b248;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .event-details-page .updateRegistrationCount:active {
+    transform: scale(0.95);
+    background-color: #388e3c;
+  }
+  
+  .event-details-page .registration-status {
+    font-size: 1rem;
+    color: #4caf50;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .event-details-page .already-registered {
+    color: #f44336;
+  }
+
+.registration-details-section{
+  width: 95vw;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.center{
+  text-align: center;
+}
+
+.registered-users-section {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  overflow-x: auto;
+}
+
+.registered-users-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+/* Table Styling */
+.registered-users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header Cells */
+.registered-users-header th {
+  padding: 12px;
+  background: #333;
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ff6600;
+}
+
+/* Body Cells */
+.table-data-cell {
+  padding: 12px;
+  background: #222;
+  color: #ddd;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.registered-users-row:nth-child(even) {
+  background: #333;
+}
+
+.registered-users-row:hover {
+  background: #444;
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+/* Payment Status Highlighting */
+.payment-status.pending {
+  color: #ffcc00; /* Yellow for Pending */
+  font-weight: bold;
+}
+
+.payment-status.completed {
+  color: #00cc66; /* Green for Completed */
+  font-weight: bold;
+}
+
+.payment-status.failed {
+  color: #ff3300; /* Red for Failed */
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registered-users-table {
+    font-size: 0.9rem;
+    overflow-x: scroll;
+    display: block;
+  }
+
+  .table-header-cell,
+  .table-data-cell {
+    padding: 8px;
+  }
+}
+
+  
+  @media (max-width: 1024px) {
+    .event-details-page h1 {
+      font-size: 2.5rem;
+    }
+  
+    .event-details-page p {
+      font-size: 1rem;
+    }
+  
+    .event-details-page .event-register {
+      padding: 10px 25px;
+      font-size: 1rem;
+    }
+  
+    .event-details-page .updateRegistrationCount {
+      padding: 10px 25px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .event-details-page {
+      padding: 30px;
+    }
+  
+    .event-details-page h1 {
+      font-size: 2rem;
+    }
+  
+    .event-details-page p {
+      font-size: 0.95rem;
+    }
+  
+    .event-details-page .event-register {
+      font-size: 1rem;
+      padding: 8px 20px;
+    }
+  
+    .event-details-page .updateRegistrationCount {
+      font-size: 1rem;
+      padding: 8px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .event-details-page {
+      padding: 20px;
+    }
+  
+    .event-details-page h1 {
+      font-size: 1.8rem;
+    }
+  
+    .event-details-page p {
+      font-size: 0.9rem;
+    }
+  
+    .event-details-page .event-register {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  
+    .event-details-page .updateRegistrationCount {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+  
+

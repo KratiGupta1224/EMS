@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+.event-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.calendar {
+  margin: 2rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

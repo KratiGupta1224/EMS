@@ -1,0 +1,27 @@
+{
+    "name": "Raj Sharma",
+    "email": "raj@gmail.com",
+    "password": "1234",
+    "role": "Attendee"
+}
+
+{
+    "email": "raj@gmail.com",
+    "password": "1234"
+}
+
+{
+  "organizer": "66ff9f23dc649838deea10a6",
+  "name": "Code-dangal",
+  "description": "Coding ninjas event",
+  "date": "2024-10-25T09:00:00Z",
+  "venue": "Jecrc University"
+}
+
+
+http://localhost:3030/api/registration/66ffa4d02ee44d14bd8c8cf8
+{
+    "userId": "66ffa228dc649838deea10aa",
+    "paymentStatus": "Completed"
+}
+

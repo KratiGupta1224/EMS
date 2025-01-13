@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.admin-dashboard-container{
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-dashboard {
+  background: #111;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background: #ff6600;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.tab.active {
+  background: #e65c00;
+  transform: scale(1.05);
+}
+
+.tab:hover {
+  background: #cc5200;
+}
+
+.tab-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+.events-tab, .users-tab {
+  margin-top: 20px;
+}
+
+.events-table, .users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.events-table th, .users-table th {
+  padding: 12px;
+  background: #333;
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+}
+
+.events-table td, .users-table td {
+  padding: 12px;
+  background: #222;
+  color: #ddd;
+  text-align: left;
+}
+
+.events-table tr:nth-child(even), .users-table tr:nth-child(even) {
+  background: #333;
+}
+
+.events-table tr:hover, .users-table tr:hover {
+  background: #444;
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+.events-table td, .users-table td {
+  font-size: 1rem;
+}
+
+.events-table td:nth-child(5), .users-table td:nth-child(3) {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .tab {
+    padding: 12px;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .admin-dashboard {
+    width: 95%;
+    margin: 0 10px;
+  }
+
+  .events-table, .users-table {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-dashboard {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .events-table th, .users-table th {
+    font-size: 0.9rem;
+  }
+
+  .events-table td, .users-table td {
+    font-size: 0.9rem;
+  }
+}

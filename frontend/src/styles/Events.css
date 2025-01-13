@@ -1,0 +1,67 @@
+.Events-container{
+    min-height: 75vh;
+}
+
+.upcoming-events-heading{
+    text-align: center;
+}
+
+.event-list{
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-evenly;
+    padding: 0 10vh;
+    gap: 1rem;
+}
+
+body::-webkit-scrollbar {
+    display: none;  
+  }
+.event-list::-webkit-scrollbar {
+    display: none; 
+  }
+
+/* Container for the toggle buttons */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+  }
+  
+  /* Style for each toggle button */
+  .toggle-btn {
+    background-color: #f0f0f0;
+    color:#ff9900;
+    border: 2px solid #f0e9e9;
+    padding: 12px 30px;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px; /* Rounded corners */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Hover effect for both buttons */
+  .toggle-btn:hover {
+    background-color: #ff6600;
+    color: white;
+    border-color: #ff6600;
+    transform: scale(1.03); /* Slightly increase size on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  /* Active button style */
+  .toggle-btn.active {
+    background: linear-gradient(135deg, #ff6600, #ff9900); /* Gradient background */
+    color: white;
+    border-color: #ff6600;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for active state */
+    transform: scale(1.05); /* Slight scaling effect for active state */
+  }
+  
