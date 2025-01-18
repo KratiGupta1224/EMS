@@ -7,8 +7,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // false because we are using port 587, which is for non-SSL connections
   auth: {
-    user: "kratigupta1224@gmail.com",
-    pass: "hmuofrysimioulsz",
+    user: "", //enter email here
+    pass: "", // enter pass key here 
   },
 });
 
@@ -67,7 +67,7 @@ exports.validateOtp = async (req, res) => {
 exports.emailSender = async (email,otp) => {
   try{
     const info = await transporter.sendMail({
-      from: '"Krati Gupta" <kratigupta1224@gmail.com>', // sender's email address
+      from: '"Krati Gupta" <place email here>', // sender's email address
       to: `${email}`, // recipients' email addresses
       subject: "Email Verification OTP", // subject line
       text: `Your OTP is ${otp}`, // plain text body
